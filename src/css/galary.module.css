@@ -1,0 +1,289 @@
+/* galary.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .item__container{
+    gap: 16px;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .user_cart {
+    width: 280px;
+    min-height: 390px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+  }
+  @media screen and (max-width:362px) {
+    .item__container{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .user_cart{
+      max-width: 300px;
+    }
+  }
+  .user_cart:hover{
+    transform: scale(0.95);
+    transition: all ease-in-out 0.2s;
+    box-shadow: 0px 0px 4px 5px rgba(51, 162, 210, 0.276);
+  }
+  .bar span {
+    cursor: pointer;
+  }
+  .user_cart img {
+    width: 230px;
+  }
+  .user_cart h1 {
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+  
+  .user_cart button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 33px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .user_cart button:hover {
+    background-color: #0056b3;
+  }
+  
+  .user_cart p {
+    margin-top: 16px;
+    color: #555;
+    text-align: center;
+  }
+  
+  .toggleButton {
+    width: 300px;
+    height: 45px;
+    transition: all ease-in-out 0.2s;
+    grid-column: 1 / -1;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4898ef;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 16px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  
+  .toggleButton:hover {
+    background-color: #276f9c;
+  }
+  
+  .slideDown {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  
+  .fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .container{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar{
+    width: 90%;
+    min-height: 50px;
+    background-color: #4898ef;
+    border-radius: 30px;
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    align-items: center;
+    color: #fff;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.title{
+  color: #1f1534;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 30px;
+  overflow: hidden;
+  padding: 30px;
+  text-align: center;
+}
+.galary
+i{
+  padding: 0px 30px;
+  overflow: hidden;
+  color: #4898ef;
+}
+
+
+@media screen and (max-width:700px) {
+  .title{
+    font-size: 30px;
+  }
+  i{
+    padding: 0px 20px;
+    overflow: hidden;
+    color: #4898ef;
+  }
+}
+@media screen and (max-width:500px) {
+  h1 i{
+    font-size: 0;
+    padding: 0
+  }
+}
+/* Основной контейнер для модального окна */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 100000;
+}
+
+/* Контейнер для контента модального окна */
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  min-height: 400px;
+  width: 90%;
+  box-shadow: 0 2px 10px rgba(87, 188, 224, 0.21);
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.elem{
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  gap: 20px;
+}
+@media screen and (max-width:730px) {
+  .elem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modalContent{
+    width: 400px;
+  }
+  .elem p {
+   min-width: 100%;
+  }
+  .elem img {
+    min-width: 70%;
+  }
+}
+.elem p {
+  width: 60%;
+  color: #000;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  color: #7D7987;
+  font-size: 16px;
+}
+.elem img {
+  width: 35%;
+}
+.modal__title{
+  width: 100%;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+/* Активное состояние для модального окна */
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.active .modalContent {
+  transform: scale(1);
+}
+
+/* Кнопка закрытия */
+.modalContent button {
+  background: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  transition: all ease-in-out 0.2s;
+}
+.modalContent button:hover{
+  transform: scale(0.95);
+  transition: all ease-in-out 0.2s;
+}
+
+.modalContent button:hover {
+  background: #0056b3;
+}

@@ -5,9 +5,69 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
 }
-
+*{
+  overflow-x: hidden;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+::selection{
+  color: rgb(27, 108, 213);
+}
+/* Для всех браузеров, поддерживающих WebKit */
+::-webkit-scrollbar {
+  width: 12px; /* Ширина вертикального скроллбара */
+  height: 12px; /* Высота горизонтального скроллбара */
+}
+
+::-webkit-scrollbar-track {
+  background: #053ba0; /* Цвет дорожки скроллбара */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* Цвет бегунка скроллбара */
+  border-radius: 10px; /* Закругление углов бегунка */
+  border: 3px solid #06398c; /* Пространство вокруг бегунка */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff; /* Цвет бегунка при наведении */
+}
+
+/* Для горизонтального скроллбара */
+::-webkit-scrollbar-horizontal {
+  height: 12px;
+}
+
+::-webkit-scrollbar-track-horizontal {
+  background: #153395;
+}
+
+::-webkit-scrollbar-thumb-horizontal {
+  background-color: #1352af;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb-horizontal:hover {
+  background: #555;
+}
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #224bc7; /* Customize the color */
+  z-index: 1000;
+  transition: width 0.2s ease;
+}
+i{
+  padding: 20px;
+  color: #4898ef;
 }

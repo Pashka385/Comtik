@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0px 30px;
+}
+.fileItem{
+    width: 250px;
+    min-height: 250px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 40px 30px 0px #e5e9f6b2;
+    transition: all ease-in-out 0.2s;
+    padding: 20px;
+}
+.fileItem:hover{
+    transform: scale(0.95);
+    transition: all ease-in-out 0.2s;
+    box-shadow: 10px 40px 50px 0px #a6a7a9b2;
+}
+.fileItem button{
+    width: 150px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all ease-in-out 0.2s;
+}
+.fileItem button:hover{
+    transform: scale(0.9);
+    transition: all ease-in-out 0.2s;
+}
+.fileImage{
+    width: 70px;
+    height: 70px;
+}
+.name{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+}
+.load{
+    color: #1551dc;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    padding: 10px 30px;
+    border: solid #1551dc 3px;
+}
+.download{
+    color: #0f42b9;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    position: relative;
+}
+.title{
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding-top: 50px;
+}

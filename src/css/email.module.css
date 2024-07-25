@@ -1,0 +1,69 @@
+.container{
+    width: 100%;
+    min-height: 30vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.title{
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box{
+    width: 500px;
+    min-height: 300px;
+    display: flex;
+    padding: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(89, 154, 207);
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+}
+form button {
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: transparent;
+    border: solid 1px #ffffff;
+    transition: all ease-in-out 0.2s;
+}
+form button:hover{
+    transform: scale(0.95); 
+    transition: all ease-in-out 0.2s;
+    background-color: #2479be98;
+    border: none;
+}
+form input{
+    width: 80%;
+    min-height: 45px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем обводку при фокусе */
+}
+/* Стили для обнуления при нажатии (фокусе) */
+input:focus {
+    border: none;
+    outline: none;
+}
+@media screen and (max-width:350px) {
+    form input{
+        width: 65%;
+        min-height: 45px;
+    }
+}

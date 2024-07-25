@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social_icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    z-index: 10000;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    padding: 10px 10px 0 0;
+}
+
+a:hover {
+    transform: translateY(-10px);
+}
+
+.social_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* z-index: 10000; */
+}
+ion-icon{
+    color: rgb(2, 33, 235);
+    transition: all ease-in-out 0.2s;
+}
+ion-icon:hover{
+    color: #2578c6;
+    transition: all ease-in-out 0.2s;
+}
+.social_link li a {
+    font-size: 18px;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.wave {
+    position: absolute;
+    bottom:200px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:#fff  url('../../public/assets/wave.png');
+    background-size: 1000px 100px;
+}
+
+.wave1 {
+    z-index: 1000;
+    opacity: 1;
+    top: 0px;
+    animation: animWave 4s linear infinite;
+}
+
+.wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    top: 0px;
+    animation: animWave_2 4s linear infinite;
+}
+@keyframes animWave {
+    0%{background-position-x:1000px;}
+    100%{background-position-x:0px ;}
+}
+@keyframes animWave_2 {
+    0%{background-position-x:0px;}
+    100%{background-position-x:1000px ;}
+}
+@media screen and (max-width:385px) {
+    .social_icon{
+        flex-wrap: nowrap;
+    }
+    .social_link{
+        flex-wrap: nowrap;
+    }
+    ion-icon{
+        color: rgb(2, 33, 235);
+        transition: all ease-in-out 0.2s;
+        font-size: 1em;
+    }
+    ion-icon:hover{
+        color: #2578c6;
+        transition: all ease-in-out 0.2s;
+    }
+    .social_link li a {
+        font-size: 14px;
+        padding: 5px 5px 0 0;
+        margin: 0px 5px;
+    }
+    
+}
