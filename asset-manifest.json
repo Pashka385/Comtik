@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Comtik/static/css/main.19e8ede2.css",
+    "main.js": "/Comtik/static/js/main.9399fad8.js",
+    "static/js/453.ed3810f9.chunk.js": "/Comtik/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/Comtik/index.html",
+    "main.19e8ede2.css.map": "/Comtik/static/css/main.19e8ede2.css.map",
+    "main.9399fad8.js.map": "/Comtik/static/js/main.9399fad8.js.map",
+    "453.ed3810f9.chunk.js.map": "/Comtik/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19e8ede2.css",
+    "static/js/main.9399fad8.js"
+  ]
+}
